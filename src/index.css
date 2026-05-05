@@ -1,7 +1,7 @@
 :root {
-  --bg: #282c34;
+  --bg: dark;
   --header: #fff;
-  --link: #61dafb;
+  --link: #6efb61;
   --text: hsla(0, 0%, 100%, 0.88);
 }
 
@@ -56,4 +56,25 @@ article p {
 article h3 {
   color: var(--link);
   margin-bottom: 0rem;
+}
+/* Light Mode (Default) */
+.App.light {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Dark Mode */
+.App.dark {
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Make sure the text isn't tiny */
+h1, h2, p, li {
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
 }
