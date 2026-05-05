@@ -1,16 +1,22 @@
 :root {
-  --bg: dark;
-  --header: #fff;
+  /* This is a high-res placeholder image of horses on a beach */
+  --bg-image: url('https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80&w=2071');
+  --header: #ffffff;
   --link: #6efb61;
-  --text: hsla(0, 0%, 100%, 0.88);
+  --text: #ffffff;
 }
 
 body {
   margin: 0;
-  font-family: "Merriweather", "Georgia", serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: var(--bg);
+  padding: 0;
+  min-height: 100vh;
+  /* Applying the image */
+  background-image: var(--bg-image);
+  background-size: cover;       /* Makes sure the photo covers the whole screen */
+  background-position: center;  /* Centers the horses in the view */
+  background-attachment: fixed; /* Keeps the background still when you scroll */
+  background-repeat: no-repeat;
+  font-family: "Merriweather", serif;
   color: var(--text);
 }
 
@@ -22,10 +28,13 @@ h3 {
 }
 
 .App {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2.5rem 1rem;
+  margin: 40px auto;
+  padding: 2.5rem;
   max-width: 700px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(8px);    /* Blurs the background behind the box */
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
