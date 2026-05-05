@@ -73,8 +73,3 @@ article h3 {
   padding: 20px;
 }
 
-/* Make sure the text isn't tiny */
-h1, h2, p, li {
-  font-family: Arial, sans-serif;
-  margin: 10px 0;
-}
