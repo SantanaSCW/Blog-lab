@@ -1,12 +1,17 @@
-// src/components/App.jsx
+import React from "react";
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
+import blogData from "../data/blog"; // Assuming you have a data folder
+
 function App() {
   return (
-    <div className="App"> {/* This MUST match your CSS .App */}
-     <header>
-      <h1>🚀 Blog Lab</h1>
-      <p>Enjoy my part of life, that is always confide within me.</p>
-    </header> 
+    <div className="App">
+      <Header name={blogData.name} />
+      <About image={blogData.image} about={blogData.about} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
+
 export default App;

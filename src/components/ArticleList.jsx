@@ -13,4 +13,5 @@ function ArticleList({ posts }) {
       ))}
     </main>
   );
-}ss
+}
+export default ArticleList;
